@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <div class="main">
 <!--    <dv-full-screen-container>-->
       <div id="container"></div>
 <!--    </dv-full-screen-container>-->
