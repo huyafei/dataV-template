@@ -1,3 +1,8 @@
+/*液晶体字*/
+@font-face {
+  font-family: LCD-BQ;
+  src: url('../font/LCD-BQ.TTF')
+}
 * {
   box-sizing: border-box;
 }
@@ -86,4 +91,7 @@ img.img-auto {
 .flex-c {
   display: flex;
   flex-direction: column;
+}
+.table-fixed{
+  table-layout: fixed;
 }

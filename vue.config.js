@@ -40,16 +40,19 @@ module.exports = {
       // 给 sass-loader 传递选项
       sass: {
         // @/ 是 src/ 的别名
-        data: `@import "@/assets/style/colors.scss";`
+        data: `
+        @import "@/assets/style/colors.scss";
+        @import "@/assets/style/mixin.scss";
+        `
       },
       postcss: {
         plugins: [
-          require('postcss-px2rem')({
+          require("postcss-px2rem")({
             // 以设计稿750为例， 750 / 10 = 75
             //remUnit通常我们是根据设计图来定这个值，
             //假如设计图给的宽度是750，我们通常就会把remUnit设置为75，这样我们写样式时，可以直接按照设计图标注的宽高来1:1还原开发。
             remUnit: 192
-          }),
+          })
         ]
       }
     }

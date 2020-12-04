@@ -3,9 +3,9 @@
 </template>
 <script>
 export default {
-  name: "Alarm",
-  components: {},
+  name: "Title",
   mixins: [],
+  components: {},
   props: {},
   data() {
     return {};

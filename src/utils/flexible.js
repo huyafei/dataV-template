@@ -83,10 +83,13 @@
   function refreshRem() {
     var width = docEl.getBoundingClientRect().width;
     // 最小1366px，最大适配1920px
-    if (width / dpr < 1366) {
-      width = 1366 * dpr;
-    } else if (width / dpr > 1920) {
-      width = 1920 * dpr;
+    // if (width / dpr < 1366) {
+    //   width = 1366 * dpr;
+    // } else if (width / dpr > 1920) {
+    //   width = 1920 * dpr;
+    // }
+    if (width / dpr > 540) {
+      width = width * dpr;
     }
     var rem = width / 10;
     docEl.style.fontSize = rem + "px";

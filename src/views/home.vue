@@ -1,6 +1,8 @@
 <template>
   <div class="home">
-    <div id="container"></div>
+<!--    <dv-full-screen-container>-->
+      <div id="container"></div>
+<!--    </dv-full-screen-container>-->
   </div>
 </template>
 

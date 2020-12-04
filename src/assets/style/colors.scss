@@ -12,15 +12,7 @@ $cl-orange: #FAA923;
 $cl-light-orange-red: #F8780E;
 $cl-orange-red: #FF4747;
 
-$vm_base: 1920;
-$vh_base: 1080;
-@function vw($px) {
-  @return ($px / $vm_base) * 100vw;
-}
 
-@function vh($px) {
-  @return ($px / $vh_base) * 100vh;
-}
 
 
 
